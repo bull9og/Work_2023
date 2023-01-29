@@ -1,7 +1,498 @@
 @import "obnulenie.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
-@mixin container () {
-	
+//! MIXINS !//
+@mixin Orange {
+	font-family: 'Montserrat';
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 73px;
+	color: #FF6100;
 }
+@mixin Black {
+	font-family: 'Montserrat';
+	font-weight: 900;
+	font-size: 25px;
+	line-height: 26px;
+	color: #4F4F4F;
+}
+@mixin GrayInf {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: #4F4F4F;
+}
+//! MIXINS - END !//
 
-//!Написать миксины, айдишки и переменные для стилей автоклава
+//? ID ?//
+#title-Orange {
+	@include Orange
+}
+#title-Black {
+	@include Black
+}
+//? ID - END ?//
+
+//* HEADER *//
+header {
+	padding: 25px 30px 22px 30px;
+	max-width: 100%;
+	background: #FF6100;
+}
+.headerContainer {
+	display: flex;
+	max-width: 1470px;
+	justify-content: center;
+	justify-content: space-between;
+}
+.headerContainer__headerListContainer {
+	display: flex;
+	&:nth-child(2) {
+		li {
+			margin-right: 18px;
+			a {
+				padding: 6px 15px;
+				background: #FF9250;
+				border-radius: 30px;
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+				color: #FF6100;
+				&:hover {
+					background: #FFFFFF;
+				}
+			}
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	&:nth-child(3) {
+		li {
+			margin-right: 18px;
+			a {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				color: #FFFFFF;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	&:nth-child(4) {
+		li {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 800;
+			font-size: 16px;
+			line-height: 20px;
+			color: #FFFFFF;
+			a {
+				margin: 0 20px;
+				padding: 5px 25px 6px 25px;
+				background: #D30000;
+				border-radius: 20px;
+				font-family: 'Roboto';
+				font-weight: 900;
+				font-size: 20px;
+				line-height: 23px;
+				text-align: center;
+				color: #FFFFFF;
+			}
+		}
+	}
+}
+//* HEADER - END *//
+
+//* SECTION 1 *//
+.section1-container {
+}
+.section1__informationAboutAvtoclav {
+}
+.informationAboutAvtoclav__supTitle {
+}
+.informationAboutAvtoclav__title {
+}
+.informationAboutAvtoclav__subTitle {
+}
+.informationAboutAvtoclav__listPros {
+}
+.section1__priceAboutAvtoclav {
+}
+.priceAboutAvtoclav__imgContainer {
+}
+.priceAboutAvtoclav__textContainer {
+}
+.textContainer__instructionImgContainer {
+}
+.textContainer__priceContainer {
+}
+.priceContainer__supPrice {
+}
+.priceContainer__price {
+}
+.priceContainer__subPrice {
+}
+.textContainer__giftContianer {
+}
+.giftContainer__ {
+}
+.giftContainer__img {
+}
+//* SECTION 1 - END *//
+
+//* SECTION 2 *//
+.section2-container {
+}
+.section2__imgContainer {
+}
+.section2__informationContainer {
+}
+.informationContainer__title {
+}
+.informationContainer__description {
+}
+//* SECTION 2 - END *//
+
+//* SECTION 3 *//
+.section3-container {
+}
+.section3__informationContainer {
+}
+.informationContainer__title {
+}
+.informationContainer__description {
+}
+.informationContainer__buttonContainer {
+}
+.section3__imgContainer {
+}
+.section3__img {
+}
+//* SECTION 3 - END *//
+
+//* SECTION 4 *//
+.section4-container {
+}
+.section4__sliderContainer {
+}
+.sliderContainer__item {
+}
+.section4__classicInformationContainer {
+}
+.classicInformationContainer__title {
+}
+.classicInformationContainer__description {
+}
+.classicInformationContainer__strongDescription {
+}
+.classicInformationContainer__buttonContainer {
+}
+//* SECTION 4 - END *//
+
+//* SECTION 5 *//
+.section5-container {
+}
+.section5__informationContainer {
+}
+.informationContainer__title {
+}
+.informationContainer__subTitle {
+}
+.informationContainer__description {
+}
+.informationContainer__buttonContainer {
+}
+.section5__imgContainer {
+}
+//* SECTION 5 - END *//
+
+//* SECTION 6 *//
+.section6-container {
+}
+.section6__imgContainer {
+}
+.section6__informationContainer {
+}
+.informationContainer__title {
+}
+.informationContainer__description {
+}
+.informationContainer__buttonContainer {
+}
+//* SECTION 6 - END *//
+
+//* SECTION 7 *//
+.section7-container {
+}
+.section7__purchaseContainer {
+}
+.purchaseContainer__title {
+}
+.purchaseContainer__buttonContainer {
+}
+.purchaseContainer__buyButton {
+}
+.section7__imgContainer {
+}
+//* SECTION 7 - END *//
+
+//* SECTION 8 *//
+.section8-container {
+}
+.section8__imgContainer {
+}
+.section8__informationContainer {
+}
+.informationContainer__title {
+}
+.informationContainer__description {
+}
+.informationContainer__listImgContainer {
+}
+.img {
+}
+.list {
+}
+.informationContainer__buttonContainer {
+}
+//* SECTION 8 - END *//
+
+//* SECTION 9 *//
+.section9-container {
+}
+.section9__img {
+}
+//* SECTION 9 - END *//
+
+//* SECTION 10 *//
+.section10-container {
+}
+.section10__title {
+}
+.section10__bookContainer {
+}
+.bookContainer__itemsBookContainer {
+}
+.itemsBookContainer__itemBook {
+}
+.itemBook__infoContainer {
+}
+.itemBook__title {
+}
+.itemBook__subTitle {
+}
+.itemBook__imgContainer {
+}
+.itemBook__ingredientsTabletContainer {
+}
+.ingredientsTabletContainer__item {
+}
+.itemBook__informationContainer {
+}
+//* SECTION 10 - END *//
+
+//* SECTION 11 *//
+.section11-container {
+}
+.section11__contactsContainer {
+}
+.contactsContainer__title {
+}
+.contactsContainer__messager {
+}
+.messagers__tg {
+}
+.messagers__whatsApp {
+}
+.contactsContainer__formContainer {
+}
+.formContaine__button {
+}
+.contact__tel {
+}
+//* SECTION 11 - END *//
+
+//* SECTION 12 *//
+.section12-container {
+}
+.section12__img {
+}
+.section12__informationContainer {
+}
+.informationContainer__title {
+}
+.informationContainer__list {
+}
+.informationContainer__buttonContainer {
+}
+//* SECTION 12 - END *//
+
+//* SECTION 13 *//
+.section13-container {
+}
+.section13__informationContainer {
+}
+.informationContainer__highContainer {
+}
+.highContainer__title {
+}
+.highContainer__1img {
+}
+.highContainer__2img {
+}
+.informationContainer__formContainer {
+}
+.formContainer__inputContainer {
+}
+.formContainer__button {
+}
+.formContainer__condition {
+}
+.informationContainer__requestContainer {
+}
+.requestContainer__title {
+}
+.requestContainer__description {
+}
+.requestContainer__price {
+}
+//* SECTION 13 - END *//
+
+//* SECTION 14 *//
+.section14-container {
+}
+.section14__title {
+}
+.section14___img {
+}
+//* SECTION 14 - END *//
+
+//* SECTION 15 *//
+.section15-container {
+}
+.section15__textContainer {
+}
+.textContainer__buttonContainer {
+}
+.section15__deliveryContainer {
+}
+.deliveryContainer__itemsContainer {
+}
+.deliveryContainer__item {
+}
+.deliveryContainer__descriptior {
+}
+.section15__connectionContainer {
+}
+.connectionContainer__telepfoneContainer {
+}
+.connectionContainer__orderContainer {
+}
+.orderContainer__description {
+}
+.orderContainer__formContainer {
+}
+//* SECTION 15 - END *//
+
+//* SECTION 16 *//
+.section16-container {
+}
+.section16__titleContainer {
+}
+.section16__sliderContainer {
+}
+.sliderContainer__item {
+}
+.item__textContainer {
+}
+.item__priceContainer {
+}
+.priceContainer__price {
+}
+.priceContainer__order {
+}
+.section16__buttonContainer {
+}
+//* SECTION 16 - END *//
+
+//* SECTION 17 *//
+.section17-container {
+}
+.section17__titleContainer {
+}
+.section17__buttonContainer {
+}
+.buttonContainer__item {
+}
+.section17__buttonNext {
+}
+//* SECTION 17 - END *//
+
+//* SECTION 18 *//
+.section18-container {
+}
+.section18__formOrderContainer {
+}
+.formOrderContainer__title {
+}
+.formOrderContainer__buttonContainer {
+}
+.section18__formPriceContainer {
+}
+.formPriceContainer__itemPriceContainer {
+}
+.itemPriceContainer__informationPriceContainer {
+}
+.informationPriceContainer__title {
+}
+.informationPriceContainer__oldPrice {
+}
+.informationPriceContainer__newPrice {
+}
+.section18__orderButtonContainer {
+}
+.orderButtonContainer__newAndOldPriceContainer {
+}
+.newAndOldPriceContainer__oldPrice {
+}
+.newAndOldPriceContainer__economPrice {
+}
+.newAndOldPriceContainer__finalPrice {
+}
+.orderButtonContainer__button {
+}
+//* SECTION 18 - END *//
+
+//* SECTION 19 *//
+.section19-container {
+}
+.section19__titleContainer {
+}
+.section19__sliderContainer {
+}
+.sliderContainer__itemVideo {
+}
+//* SECTION 19 - END *//
+
+//* FOOTER *//
+.footerContainer {
+}
+.footerContainer__informationContainer {
+}
+.footerContainer__confidencialnost {
+}
+//* FOOTER - END *//
