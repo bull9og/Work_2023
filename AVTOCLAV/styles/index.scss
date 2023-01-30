@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
+main {
+	padding: 0 30px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+}
+*.container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1470px;
+	margin: 0 auto;
+}
+
 //! MIXINS !//
 @mixin Orange {
 	font-family: 'Montserrat';
@@ -17,13 +30,21 @@
 	line-height: 26px;
 	color: #4F4F4F;
 }
-@mixin GrayInf {
+@mixin Default-Desc {
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 26px;
 	color: #4F4F4F;
+}
+@mixin Default-Desc-White {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: #FFFFFF;
 }
 //! MIXINS - END !//
 
@@ -33,6 +54,12 @@
 }
 #title-Black {
 	@include Black
+}
+#Default-Desc {
+	@include Default-Desc
+}
+#Default-Desc-White {
+	@include Default-Desc-White
 }
 //? ID - END ?//
 
@@ -45,8 +72,9 @@ header {
 .headerContainer {
 	display: flex;
 	max-width: 1470px;
-	justify-content: center;
 	justify-content: space-between;
+	margin: 0 auto;
+	align-items: center;
 }
 .headerContainer__headerListContainer {
 	display: flex;
@@ -118,39 +146,102 @@ header {
 //* HEADER - END *//
 
 //* SECTION 1 *//
-.section1-container {
-}
-.section1__informationAboutAvtoclav {
+.section1 {
+	padding: 30px 0 70px 0;
+	align-items: center;
+	position: relative;
 }
 .informationAboutAvtoclav__supTitle {
+	font-size: 22px;
+	line-height: 27px;
+	color: #FF6100;
 }
 .informationAboutAvtoclav__title {
+	font-weight: 900;
+	font-size: 92.382px;
+	line-height: 85px;
+	color: #FF6100;
+	text-transform: uppercase;
 }
 .informationAboutAvtoclav__subTitle {
+	font-size: 22px;
+	line-height: 27px;
+	color: #FF6100;
 }
-.informationAboutAvtoclav__listPros {
-}
-.section1__priceAboutAvtoclav {
+.informationAboutAvtoclav__listPros { //todo: Добавить в список боковые картинки "ХИТ!" //
+	margin-top: 30px;
+	float: right;
+	li {
+		font-size: 22px;
+		line-height: 27px;
+		color: #4F4F4F;
+		&::before {
+			content: "¬";
+			margin-right: 15px;
+		}
+	}
 }
 .priceAboutAvtoclav__imgContainer {
+	margin-left: -110px;
+}
+.section1__avtoclavImgContainer {
+	z-index: -1;
+	img {
+		left: 50%;
+		transform: translate(-20%, -0%);
+		top: 30px;
+		position: absolute;
+	}
+}
+.section1__priceAboutAvtoclav {
+	z-index: 2;
 }
 .priceAboutAvtoclav__textContainer {
+	max-width: 335px;
+	text-align: center;
 }
 .textContainer__instructionImgContainer {
-}
-.textContainer__priceContainer {
+	display: flex;
+	flex-direction: column;
+	margin-left: 210px;
+	margin-bottom: 45px;
+	img {
+		width: 62px;
+		&:last-child {
+			margin-top: 15px;
+		}
+	}
 }
 .priceContainer__supPrice {
+	font-size: 25.9254px;
+	line-height: 32px;
+	text-decoration-line: line-through;
+	color: #BDBDBD;
 }
 .priceContainer__price {
+	font-weight: 900;
+	font-size: 66.9982px;
+	line-height: 50px;
+	color: #00A542;
+	span {
+		font-weight: 300;
+		font-size: 33px;
+	}
 }
 .priceContainer__subPrice {
+	font-size: 42.2488px;
+	line-height: 52px;
+	color: #BDBDBD;
+	text-transform: uppercase;
 }
 .textContainer__giftContianer {
-}
-.giftContainer__ {
-}
-.giftContainer__img {
+	margin-top: 15px;
+	p {
+		font-weight: 800;
+		font-size: 36.4905px;
+		line-height: 44px;
+		color: #FF6100;
+	}
 }
 //* SECTION 1 - END *//
 
