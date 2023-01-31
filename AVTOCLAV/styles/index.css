@@ -77,13 +77,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------------------------------------------*/
 main {
-  padding: 0 30px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
 }
 
 *.container {
+  padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,6 +126,49 @@ main {
   font-size: 18px;
   line-height: 26px;
   color: #FFFFFF;
+}
+
+#button-Orange {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding: 5px 35px;
+  border: 1px solid #FF6100;
+  background: #FF6100;
+  border-radius: 50px;
+  margin-right: 19px;
+}
+#button-Orange:hover {
+  color: #FF6100;
+  background: #FFFFFF;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #FF6100;
+}
+
+#button-Gray {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding: 5px 25px;
+  border: 1px solid #BDBDBD;
+  background: #BDBDBD;
+  border-radius: 50px;
+}
+#button-Gray:hover {
+  color: #4F4F4F;
+  background: #FFFFFF;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #4F4F4F;
 }
 
 header {
@@ -250,8 +293,10 @@ header {
   color: #4F4F4F;
 }
 .informationAboutAvtoclav__listPros li::before {
-  content: "¬";
-  margin-right: 15px;
+  content: "";
+  margin-right: 10px;
+  background: url(../img/sec-1/section-1__hit.svg) center center no-repeat;
+  padding: 15px;
 }
 
 .priceAboutAvtoclav__imgContainer {
@@ -331,4 +376,263 @@ header {
   font-size: 36.4905px;
   line-height: 44px;
   color: #FF6100;
+}
+
+.section2 {
+  max-width: 100%;
+  margin: 0 auto;
+  background: url("../img/sec-2/sec-2__bg.png") center center/cover no-repeat;
+  height: 583px;
+}
+
+.section2__imgContainer {
+  margin-top: 83px;
+}
+
+.section2__informationContainer {
+  max-width: 700px;
+  margin-right: 200px;
+}
+.section2__informationContainer p {
+  margin-top: 40px;
+}
+
+.informationContainer__title {
+  margin-top: 83px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 73px;
+  color: #FFFFFF;
+}
+
+.section3-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section3__informationContainer {
+  max-width: 600px;
+}
+.section3__informationContainer p {
+  margin-top: 40px;
+}
+.section3__informationContainer h2 {
+  margin-top: 134px;
+}
+
+.informationContainer__buttonContainer {
+  margin-top: 64px;
+}
+
+.section7 {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #F2F2F2;
+}
+
+.section7__purchaseContainer h2 {
+  width: 581px;
+  margin-top: 100px;
+}
+.section7__purchaseContainer input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 26px;
+  color: #828282;
+  background: #FFFFFF;
+  border-radius: 50px;
+  padding: 11px 80px 11px 37px;
+  margin-top: 43px;
+}
+
+.purchaseContainer__buttonContainer {
+  margin-top: 28px;
+}
+
+.purchaseContainer__buyButton {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding: 11px 153px;
+  border: 1px solid #FF6100;
+  background: #FF6100;
+  border-radius: 50px;
+  margin-top: 71px;
+}
+
+.section7__imgContainer {
+  margin-top: 91px;
+  position: relative;
+}
+.section7__imgContainer img {
+  margin-right: 400px;
+}
+.section7__imgContainer p {
+  max-width: 313px;
+  position: absolute;
+  right: 25%;
+  top: 40%;
+}
+
+.section8 {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section8__imgContainer {
+  margin-top: 118px;
+}
+
+.section8__informationContainer h2 {
+  margin-top: 132px;
+  margin-bottom: 25px;
+}
+.section8__informationContainer p {
+  max-width: 528px;
+  margin-bottom: 33px;
+}
+
+.informationContainer__listImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 550px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img {
+  margin-right: 62px;
+}
+
+.list li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #BDBDBD;
+  margin-bottom: 12px;
+}
+.list li:last-child {
+  margin-bottom: 0;
+}
+.list li::before {
+  content: "";
+  margin-right: 10px;
+  background: url(../img/sec-1/section-1__hit.svg) center center no-repeat;
+  padding: 15px;
+}
+
+.section9 {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section9__img {
+  margin-top: 70px;
+}
+
+.section11 {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #E0E0E0;
+  padding: 92px 0;
+}
+
+.contactsContainer__messagerForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.messagerForm__messager {
+  margin-top: 52px;
+}
+.messagerForm__messager img {
+  margin-right: 43px;
+}
+
+.messagers__tg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  max-width: 730px;
+}
+
+.messagers__whatsApp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.messagerForm__formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 65px;
+}
+.messagerForm__formContainer input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 26px;
+  color: #BDBDBD;
+  background: #FFFFFF;
+  border-radius: 50px;
+  padding: 11px 70px 11px 37px;
+  margin-bottom: 34px;
+}
+
+.formContaine__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FF6100;
+  border-radius: 30px;
+  padding: 11px 78px 11px 95px;
+}
+
+.contact__tel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 31.4px;
+  line-height: 47px;
+  color: #828282;
+  padding: 0 100px;
 }/*# sourceMappingURL=index.css.map */
