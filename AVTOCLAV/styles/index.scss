@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
+body {
+	display: flex;
+	max-width: 100%;
+	flex-direction: column;
+}
 main {
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 500;
+	flex: 1 1 auto;
 }
 *.container {
 	padding: 0 30px;
@@ -316,13 +322,10 @@ header {
 	line-height: 73px;
 	color: #FFFFFF;
 }
-.informationContainer__description {
-	
-}
 //* SECTION 2 - END *//
 
 //* SECTION 3 *//
-.section3-container {
+.section3 {
 	max-width: 100%;
 	margin: 0 auto;
 }
@@ -335,21 +338,14 @@ header {
 		margin-top: 134px;
 	}
 }
-.informationContainer__title {
-	
-}
-.informationContainer__description {
-}
 .informationContainer__buttonContainer {
 	margin-top: 64px;
-}
-.section3__imgContainer {
 }
 
 //* SECTION 3 - END *//
 
 //* SECTION 4 *//
-.section4-container {
+.section4 {
 }
 .section4__sliderContainer {
 }
@@ -368,34 +364,63 @@ header {
 //* SECTION 4 - END *//
 
 //* SECTION 5 *//
-.section5-container {
+.section5 {
+	padding: 140px 0;
+	display: flex;
+	align-items: center;
 }
 .section5__informationContainer {
-}
-.informationContainer__title {
-}
-.informationContainer__subTitle {
-}
-.informationContainer__description {
+	margin-right: 40px;
+	h2 {
+		margin-bottom: 40px;
+	}
+	h3 {
+		margin-bottom: 40px;
+	}
 }
 .informationContainer__buttonContainer {
+	margin-top: 175px;
 }
 .section5__imgContainer {
+	width: 510px;
+	border: 1px solid #E0E0E0;
+	img {
+		width: 510px;
+	}
 }
 //* SECTION 5 - END *//
 
 //* SECTION 6 *//
-.section6-container {
+.section6 {
+	display: flex;
+	padding: 140px 0;
 }
 .section6__imgContainer {
+	margin-right: 125px;
+	position: relative;
+	.imgContainer__sliderContainer {
+		width: 510px;
+		border: 1px solid #E0E0E0;
+		img {
+			width: 508px;
+		}
+	}
+	.imgContainer__likeDecoration {
+		position: absolute;
+		left: 35px;
+		top: 35px;
+	}
 }
 .section6__informationContainer {
-}
-.informationContainer__title {
-}
-.informationContainer__description {
-}
-.informationContainer__buttonContainer {
+	h2 {
+		margin-bottom: 40px;
+	}
+	p {
+		margin-bottom: 45px;
+		&:last-child {
+			margin: 0;
+		}
+	}
 }
 //* SECTION 6 - END *//
 
@@ -422,8 +447,6 @@ header {
 		padding: 11px 80px 11px 37px;
 		margin-top: 43px;
 	}
-}
-.purchaseContainer__title {
 }
 .purchaseContainer__buttonContainer {
 	margin-top: 28px;
@@ -474,10 +497,6 @@ header {
 		margin-bottom: 33px;
 	}
 }
-.informationContainer__title {
-}
-.informationContainer__description {
-}
 .informationContainer__listImgContainer {
 	display: flex;
 	max-width: 550px;
@@ -506,22 +525,21 @@ header {
 		}
 	}
 }
-.informationContainer__buttonContainer {
-}
 //* SECTION 8 - END *//
 
 //* SECTION 9 *//
 .section9 {
-	max-width: 100%;
-	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
 .section9__img {
 	margin-top: 70px;
+	width: 1300px;
 }
 //* SECTION 9 - END *//
 
 //* SECTION 10 *//
-.section10-container {
+.section10 {
 }
 .section10__title {
 }
@@ -564,8 +582,6 @@ header {
 		margin-right: 43px;
 	}
 }
-
-
 .messagers__tg {
 	display: flex;
 	align-items: center;
@@ -620,7 +636,7 @@ header {
 //* SECTION 11 - END *//
 
 //* SECTION 12 *//
-.section12-container {
+.section12 {
 }
 .section12__img {
 }
@@ -635,7 +651,7 @@ header {
 //* SECTION 12 - END *//
 
 //* SECTION 13 *//
-.section13-container {
+.section13 {
 }
 .section13__informationContainer {
 }
@@ -666,7 +682,7 @@ header {
 //* SECTION 13 - END *//
 
 //* SECTION 14 *//
-.section14-container {
+.section14 {
 }
 .section14__title {
 }
@@ -675,7 +691,7 @@ header {
 //* SECTION 14 - END *//
 
 //* SECTION 15 *//
-.section15-container {
+.section15 {
 }
 .section15__textContainer {
 }
@@ -702,7 +718,7 @@ header {
 //* SECTION 15 - END *//
 
 //* SECTION 16 *//
-.section16-container {
+.section16 {
 }
 .section16__titleContainer {
 }
@@ -723,7 +739,7 @@ header {
 //* SECTION 16 - END *//
 
 //* SECTION 17 *//
-.section17-container {
+.section17 {
 }
 .section17__titleContainer {
 }
@@ -736,7 +752,7 @@ header {
 //* SECTION 17 - END *//
 
 //* SECTION 18 *//
-.section18-container {
+.section18 {
 }
 .section18__formOrderContainer {
 }
@@ -771,7 +787,7 @@ header {
 //* SECTION 18 - END *//
 
 //* SECTION 19 *//
-.section19-container {
+.section19 {
 }
 .section19__titleContainer {
 }

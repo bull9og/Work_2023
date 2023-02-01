@@ -76,10 +76,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*------------------------------------------------------*/
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 main {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 *.container {
@@ -407,7 +421,7 @@ header {
   color: #FFFFFF;
 }
 
-.section3-container {
+.section3 {
   max-width: 100%;
   margin: 0 auto;
 }
@@ -424,6 +438,72 @@ header {
 
 .informationContainer__buttonContainer {
   margin-top: 64px;
+}
+
+.section5 {
+  padding: 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section5__informationContainer {
+  margin-right: 40px;
+}
+.section5__informationContainer h2 {
+  margin-bottom: 40px;
+}
+.section5__informationContainer h3 {
+  margin-bottom: 40px;
+}
+
+.informationContainer__buttonContainer {
+  margin-top: 175px;
+}
+
+.section5__imgContainer {
+  width: 510px;
+  border: 1px solid #E0E0E0;
+}
+.section5__imgContainer img {
+  width: 510px;
+}
+
+.section6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 140px 0;
+}
+
+.section6__imgContainer {
+  margin-right: 125px;
+  position: relative;
+}
+.section6__imgContainer .imgContainer__sliderContainer {
+  width: 510px;
+  border: 1px solid #E0E0E0;
+}
+.section6__imgContainer .imgContainer__sliderContainer img {
+  width: 508px;
+}
+.section6__imgContainer .imgContainer__likeDecoration {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+}
+
+.section6__informationContainer h2 {
+  margin-bottom: 40px;
+}
+.section6__informationContainer p {
+  margin-bottom: 45px;
+}
+.section6__informationContainer p:last-child {
+  margin: 0;
 }
 
 .section7 {
@@ -533,12 +613,17 @@ header {
 }
 
 .section9 {
-  max-width: 100%;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section9__img {
   margin-top: 70px;
+  width: 1300px;
 }
 
 .section11 {
