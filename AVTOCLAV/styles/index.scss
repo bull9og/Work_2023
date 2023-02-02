@@ -910,97 +910,387 @@ header {
 
 //* SECTION 15 *//
 .section15 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 .section15__textContainer {
+	justify-content: left;
+	h2 {
+		margin-top: 65px;
+		margin-bottom: 30px;
+	}
 }
 .textContainer__buttonContainer {
-}
-.section15__deliveryContainer {
+	margin-bottom: 50px;
 }
 .deliveryContainer__itemsContainer {
+	display: grid;
+	grid-template-columns: 450px 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 50px;
+	margin-bottom: 25px;
+	h3 {
+		margin-bottom: 25px;
+	}
 }
-.deliveryContainer__item {
+.connectionContainer__telephoneConntainerForm {
+	position: relative;
+}
+.telephoneConntainerForm__imgContainer {
+	position: absolute;
+	right: -550px;
+	top: -272px;
+	img {
+		width: 450px;
+	}
+}
+.deliveryContainer__item {	
+	text-align: center;
+	border: 1px solid #F2F2F2;
+	background: #F2F2F2;
+	padding: 25px 45px;
+	&:last-child {
+		padding: 25px 210px 25px 45px;
+		p {
+			width: 330px;
+		}
+	}
 }
 .deliveryContainer__descriptior {
+	margin-bottom: 25px;
+	margin-left: 50px;
 }
-.section15__connectionContainer {
-}
-.connectionContainer__telepfoneContainer {
+.telephoneConntainerForm__telephoneContainer {
+	display: flex;
+	align-items: center;
+	padding: 25px 65px;
+	border: 1px solid #FF6100;
+	background: #FF6100;
+	margin-bottom: 22px;
+	h3 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 25px;
+		color: #FFFFFF;
+		margin-right: 85px;
+	}
+	h2 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 31px;
+		line-height: 47px;
+		color: #FFFFFF;
+	}
 }
 .connectionContainer__orderContainer {
+	display: flex;
+	margin-left: 50px;
+	justify-content: space-between;
+	margin-bottom: 95px;
 }
 .orderContainer__description {
+	p {
+		max-width: 270px;
+	}
 }
 .orderContainer__formContainer {
+	display: flex;
+	flex-direction: column;
+	input {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 25px;
+		line-height: 26px;
+		color: #828282;
+		border: 1px solid #F2F2F2;
+		background: #F2F2F2;
+		border-radius: 50px;
+		padding: 11px 37px;
+		margin-bottom: 20px;
+	}
+	a {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 900;
+		font-size: 25px;
+		line-height: 26px;
+		text-align: center;
+		color: #FFFFFF;
+		background: #FF6100;
+		border-radius: 30px;
+		padding: 10px 80px 10px 95px;	
+	}
 }
 //* SECTION 15 - END *//
 
 //* SECTION 16 *//
 .section16 {
+	max-width: 100%;
+	background: #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	padding: 70px 0 140px 0;
 }
 .section16__titleContainer {
+	margin-bottom: 40px;
 }
 .section16__sliderContainer {
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	grid-template-rows: 1fr;
+	grid-gap: 90px;
 }
 .sliderContainer__item {
+	img {
+		width: 250px;
+	}
 }
 .item__textContainer {
-}
-.item__priceContainer {
+	max-width: 100%;
+	background: #E0E0E0;
+	padding: 15px 10px;
+	h3 {
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: #FF6100;
+	}
+	p {
+		font-family: 'Montserrat';
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: center;
+		color: #4F4F4F;
+	}
 }
 .priceContainer__price {
+	background: #fff;
+	padding: 5px 10px;
+	p {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 15px;
+		text-decoration-line: line-through;
+		color: #4F4F4F;
+	}
+	h3 {
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 23px;
+		color: #FF6100;
+	}
 }
-.priceContainer__order {
-}
-.section16__buttonContainer {
+.section16__buttonContainer {	
+	margin-top: 80px;
+	a {
+		font-weight: 900;
+		font-size: 25px;
+		line-height: 26px;
+		color: #FFFFFF;
+		background: #FF6100;
+		border-radius: 30px;
+		padding: 10px 150px 10px 150px;
+	}	
 }
 //* SECTION 16 - END *//
 
 //* SECTION 17 *//
 .section17 {
+	background: #FF6100;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 110px 0;
 }
 .section17__titleContainer {
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 70px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 70px;
 }
-.section17__buttonContainer {
+.section17__buttonsContainer {
+	display: grid;
+	grid-template-columns: 250px 250px 250px;
+	grid-template-rows: 1fr;
+	grid-gap: 50px;
+	margin-bottom: 80px;
 }
 .buttonContainer__item {
+	background-color: #FF9250;
+	img {
+		width: 100%;
+	}
+	h2 {
+		padding: 20px 0;
+		font-weight: 800;
+		font-size: 25px;
+		line-height: 30px;
+		text-align: center;
+		color: #FFFFFF;
+	}
 }
 .section17__buttonNext {
+	padding: 5px 70px;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 45px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #BC0B00;
+	border-radius: 40px;
 }
 //* SECTION 17 - END *//
 
 //* SECTION 18 *//
 .section18 {
+	max-width: 100%;
+	background: #F2F2F2;
+	flex-direction: column;
+	align-items: start;
+	padding: 130px 0;
+}
+.section18__container {
+	margin: 0 310px 0 310px;
 }
 .section18__formOrderContainer {
+	display: flex;
+	align-items: center;
+	margin-bottom: 75px;
+	position: relative;
+}
+.formOrderContainer__imgContainer {
+	position: absolute;
+	right: -360px;
+	top: 70px;
+	img {
+		width: 420px;
+	}
 }
 .formOrderContainer__title {
+	margin-right: 50px;
 }
 .formOrderContainer__buttonContainer {
+	margin-top: 10px;
 }
 .section18__formPriceContainer {
+	margin-bottom: 120px;
 }
 .formPriceContainer__itemPriceContainer {
+	display: flex;
+	align-items: center;
+	margin-bottom: 35px;
+	&:last-child {
+		margin: 0;
+	}
+}
+.itemPriceContainer__kolichestvoTovara {
+	display: grid;
+	grid-template-columns: 30px 45px 30px;
+	grid-template-rows: 1fr;
+	align-items: center;
+	margin-right: 35px;
+	#buttonCountNumber {
+		text-align: center;
+		font-family: 'Montserrat';
+		font-weight: 800;
+		font-size: 18px;
+		line-height: 30px;
+		color: #FF6100;
+		background: #fff;
+	}
+	input {
+		background: #BDBDBD;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		color: #FFFFFF;
+		cursor: pointer;
+	}
 }
 .itemPriceContainer__informationPriceContainer {
+	display: grid;
+	grid-template-columns: 450px 100px 120px;
+	grid-gap: 30px;
+	align-items: center;
 }
 .informationPriceContainer__title {
+	h3 {
+		font-family: 'Montserrat';
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 28px;
+		color: #4F4F4F;
+	}
 }
 .informationPriceContainer__oldPrice {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 28px;
+	text-decoration-line: line-through;
+	color: #FF9250;
+	text-align: right;
 }
 .informationPriceContainer__newPrice {
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 28px;
+	color: #FF6100;
+	text-align: right;
 }
 .section18__orderButtonContainer {
+	display: flex;
+	align-items: end;
+	margin-left: 100px;
 }
 .orderButtonContainer__newAndOldPriceContainer {
+	margin-right: 40px;
 }
 .newAndOldPriceContainer__oldPrice {
+	font-family: 'Montserrat';
+	font-weight: 300;
+	font-size: 35px;
+	line-height: 44px;
+	text-align: center;
+	text-decoration-line: line-through;
+	color: #FF9250;
 }
 .newAndOldPriceContainer__economPrice {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 44px;
+	text-align: center;
+	color: #FF9250;
 }
 .newAndOldPriceContainer__finalPrice {
+	font-family: 'Montserrat';
+	font-weight: 800;
+	font-size: 55px;
+	line-height: 67px;
+	text-align: center;
+	color: #FF6100;
 }
 .orderButtonContainer__button {
+	font-family: 'Montserrat';
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 44px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #FF6100;
+	border-radius: 38px;
+	padding: 8px 50px;
 }
 //* SECTION 18 - END *//
 
