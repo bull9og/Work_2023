@@ -12,13 +12,80 @@ body {
 main {
 	flex: 1 1 auto;
 }
-*.container {
-	padding: 0 30px;
+/* Слайдер */
+.slick-slider{
+	position: relative;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
 	display: flex;
-	justify-content: space-between;
-	max-width: 1290px;
-	margin: 0 auto;
-	align-items: center;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow {
+	font-size: 0;
+	background: url("../img/sec-2/sec-2__arrowSlider.svg") center center no-repeat;
+	width: 70px;
+	height: 20px;
+}
+.slick-arrow{
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	left: 0;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+	left: 30px;
+	transform: rotate(-180deg);
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+	left: 210px;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+	position: absolute;
+	display: flex;
+	bottom: 5px;
+	left: 120px;
+}
+.slick-dots li{
+	width: 10px;
+	height: 10px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 30px;
+	margin-right: 20px;
+	&:last-child {
+		margin: 0;
+	}
+}
+/* Активная точка */
+.slick-dots li.slick-active{
+	background: rgba(255, 255, 255, 1);
+}
+/* Элемент точки */
+.slick-dots li button{
+	font-size: 0;
 }
 //? SETTINGS - END ?//
 
@@ -97,13 +164,352 @@ main {
 //* HEADER - END *//
 
 //* SECTION-1 *//
-
+.section-1 {
+	padding: 0 30px;
+	max-width: 100%;
+	height: 91.9vh;
+	background: url("../img/sec-1/sec-1__bg.png") center center/cover no-repeat;
+}
+.section-1__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 14.5% 0;
+}
+.section-1__textContainerS1 {
+	max-width: 520px;
+}
+.textContainerS1__titleContainer {
+	margin-bottom: 20px;
+	h2 {
+		font-family: 'Yeseva One';
+		font-size: 40px;
+		line-height: 53px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		span {
+			color: #E3B873;
+		}
+	}
+}
+.textContainerS1__descriptionContainer {
+	margin-bottom: 60px;
+	p {
+		font-family: 'Nunito Sans';
+		font-size: 22px;
+		line-height: 36px;
+		color: #FFFFFF;
+	}
+}
+.section-1__buttonsContainer {
+	a {
+		font-family: 'Nunito Sans';
+		font-style: italic;
+		font-size: 11px;
+		line-height: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		border: 1px solid #FFFFFF;
+		border-radius: 2px;
+		margin-right: 20px;
+		transition: 350ms;
+		&:hover {
+			background: #E3B873;
+			box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+			border-radius: 2px;
+			border: 1px solid #E3B873;
+		}
+		&:nth-child(1) {
+			padding: 19px 40px 19px 40px;
+		}
+		&:nth-child(2) {
+			padding: 19px 25px 19px 25px;
+			margin: 0;
+		}
+	}
+}
 //* SECTION-1 - END *//
 
 //* SECTION-2 *//
+.section-2 {
+	max-width: 100%;
+	height: 90vh;
+	background: #131313;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.section-2__container {
+	max-width: 1200px;
+	padding: 0 30px;
+}
+.section-2__titlePlaceContainer {
+	max-width: 625px;
+	display: flex;
+	float: right;
+	margin-bottom: 45px;
+	margin-right: 60px;
+}
+.titlePlaceContainer__title {
+	font-family: 'Yeseva One';
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+	margin-right: 60px;
+	&:last-child {
+		margin: 0;
+	}
+	.active {
+		color: #E3B873;
+		border-bottom: 1px solid #E3B873;
+	}
+}
+.section-2__sliderContainer {
+	display: flex;
+	clear: right;
+	position: relative;
+}
+.sliderContainer__item {
+	display: flex;
+	margin-left: 50px;
+}
+.item__infContainer {
+	margin-right: 50px;
+}
+.infContainer__titleContainer {
+	margin-bottom: 35px;
+	h3 {
+		font-family: 'Yeseva One';
+		font-size: 27px;
+		line-height: 37px;
+		letter-spacing: -0.07em;
+		text-transform: uppercase;
+		color: #E3B873;
+	}
+}
+.infContainer__descriptionContainer {
+	margin-bottom: 35px;
+	p {
+		font-family: 'Nunito Sans';
+		font-size: 14px;
+		line-height: 27px;
+		color: #FFFFFF;
+	}
+}
+.infContainer__aboutProjectInformationContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 30px;
+	h4 {
+		font-family: 'Yeseva One';
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: uppercase;
+		color: #E3B873;
+		margin-bottom: 10px;
+	}
+	p {
+		font-family: 'Nunito Sans';
+		font-size: 13px;
+		line-height: 21px;
+		color: #FFFFFF;
+	}
+}
 //* SECTION-2 - END *//
 
 //* SECTION-3 *//
+.section-3 {
+	max-width: 100%;
+	background: #FFFFFF;
+	padding: 0 0 100px 0;
+}
+.section-3__container {
+	max-width: 100%;
+	background: #131313;
+}
+.section-3__secondContainer {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.section-3__titleCotnainer {
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	h3 {
+		font-family: 'Yeseva One';
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-bottom: 15px;
+	}
+	img {
+		width: 32px;
+		margin: 0 auto;
+	}
+	&::after {
+		content: '';
+		width: 32px;
+		height: 1px;
+		position: absolute;
+		background-color: #E3B873;
+		bottom: 12px;
+		right: 30px;
+		border-radius: 30px;
+	}
+	&::before {
+		content: '';
+		width: 32px;
+		height: 1px;
+		position: absolute;
+		background-color: #E3B873;
+		bottom: 12px;
+		left: 25px;
+		border-radius: 30px;
+	}
+}
+.section-3__videoContainer {
+	position: relative;
+	margin-bottom: -18.5%;
+	#video {
+		transition: 290ms;
+		&:hover {
+			filter: brightness(15%);
+		}
+	}
+	#play {
+		display: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&.active {
+		#play {
+			display: block;
+		}
+	}
+}
+.section-3__containerInforamations {
+	margin-top: 280px;
+}
+.section-3__description {
+	max-width: 680px;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 37px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 93px;
+	position: relative;
+	&::after {
+		content: '';
+		width: 55px;
+		height: 1.5px;
+		position: absolute;
+		background-color: #E3B873;
+		top: -30px;
+		left: 300px;
+		border-radius: 30px;
+	}
+
+}
+.formContainer__competition {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 39px;
+}
+.group {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	width: 231px;
+	label {
+		font-family: 'Nunito Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 21px;
+		color: rgba(54, 54, 54, 0.5);
+		margin-bottom: 7px;
+	}
+	input {
+		font-family: 'Nunito Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 23px;
+		color: #363636;
+		padding-bottom: 8px;
+		border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+	}
+}
+.formContainer__button {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 27px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border: 2px solid #E3B873;
+	background-color: #E3B873;
+	box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+	border-radius: 2px;
+	padding: 10px 75px;
+	&:hover {
+		color: #E3B873;
+		background-color: #FFFFFF;
+		transition: 0.3s;
+	}
+}
+.formContainer__checkboxContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	p {
+		font-family: 'Nunito Sans';
+		font-size: 14px;
+		line-height: 163.68%;
+		color: #181818;
+	}
+}
+.checkboxContainer__inputContainer {
+	margin-right: 15px;
+	.checkbox {
+		width: 18px;
+		height: 18px;
+		position: relative;
+		&:checked::before {
+			content: "";
+			background: #E3B873;
+			width: 18px;
+			height: 18px;
+			position: absolute;
+		}
+		&:checked::after {
+			content: url("../img/sec-3/sec-3__check.svg");
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+}
 //* SECTION-3 - END *//
 
 //* SECTION-4 *//
