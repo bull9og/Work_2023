@@ -672,6 +672,7 @@ main {
   width: 18px;
   height: 18px;
   position: absolute;
+  border-radius: 1px;
 }
 .checkboxContainer__inputContainer .checkbox:checked::after {
   content: url("../img/sec-3/sec-3__check.svg");
