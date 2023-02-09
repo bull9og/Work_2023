@@ -369,8 +369,7 @@ header {
 .priceContainer__supPrice {
   font-size: 25.9254px;
   line-height: 32px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
   color: #BDBDBD;
 }
 
@@ -1398,8 +1397,7 @@ header {
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
   color: #4F4F4F;
 }
 .priceContainer__price h3 {
@@ -1590,8 +1588,7 @@ header {
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
   color: #FF9250;
   text-align: right;
 }
@@ -1624,8 +1621,7 @@ header {
   font-size: 35px;
   line-height: 44px;
   text-align: center;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
   color: #FF9250;
 }
 
@@ -1711,8 +1707,7 @@ header {
   font-size: 18.928px;
   line-height: 22px;
   text-align: center;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   text-transform: uppercase;
   color: #FFC09A;
 }/*# sourceMappingURL=index.css.map */

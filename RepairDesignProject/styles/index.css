@@ -227,8 +227,7 @@ main {
   font-family: "Nunito Sans";
   font-size: 11px;
   line-height: 15px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #E3B873;
 }
 
@@ -1406,8 +1405,7 @@ main {
   font-family: "Nunito Sans";
   font-size: 11px;
   line-height: 15px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #E3B873;
 }
 
