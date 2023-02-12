@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Online Coffee Shop</title>
 	<link rel="stylesheet" href="styles/index.css">
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script defer src="js/slick.min.js"></script>
+	<script defer src="js/script.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -40,26 +43,11 @@
 				</div>
 				<div class="section-1__imgContainer">
 					<img src="img/sec-1/sec-1__coffeeCup.png" alt="coffeeCup" class="imgContainer__coffeeCup">
-					<form action="" class="imgContainer__formContainer">
-						<div class="formContainer__ratingContainer">
-							<div class="rating__items">
-								<input id="rating_5" class="rating__item" type="radio" value="5" name="rating">
-								<label for="rating_5" class="rating__label"></label>
-								<input id="rating_4" class="rating__item" type="radio" value="4" name="rating">
-								<label for="rating_4"></label>
-								<input id="rating_3" class="rating__item" type="radio" value="3" name="rating">
-								<label for="rating_3" class="rating__label"></label>
-								<input id="rating_2" class="rating__item" type="radio" value="2" name="rating">
-								<label for="rating_2" class="rating__label"></label>
-								<input id="rating_1" class="rating__item" type="radio" value="1" name="rating">
-								<label for="rating_1" class="rating__label"></label>
-							</div>
-							<div class="rating__textContainer">
-								<p>4.9 out of 5 Overall Star Rating for All Local Business.</p>
-							</div>
-						</div>
-					</form>
+					<div class="imgContainer__ratingImgContainer">
+						<img src="img/sec-1/sec-1__rating.svg" alt="">
+					</div>
 				</div>
+
 			</div>
 		</section>
 		<section class="section-2">
@@ -185,23 +173,30 @@
 			</div>
 		</section>
 		<section class="section-6">
-			<div class="section-6__container">
-				<div class="section-6__sliderContainer">
-					<div class="sliderContainer__item">
-						<img src="" alt="">
-						<div class="item__textContainer">
-							<h4>Brooklyn Simmons<img src="img/sec-6/sec-6__stars.svg" alt=""></h4>
-							<p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
-						</div>
-					</div>
-					<div class="sliderContainer__item">
-						<img src="" alt="">
-						<div class="item__textContainer">
-							<h4>Imam White<img src="img/sec-6/sec-6__stars.svg" alt=""></h4>
-							<p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
-						</div>
+			<div class="section-6__sliderContainer">
+				<div class="sliderContainer__item">
+					<img class="item__img" src="img/sec-6/slider__item2.png" alt="">
+					<div class="item__textContainer">
+						<h4>Brooklyn Simmons<img src="img/sec-6/sec-6__stars.svg" alt=""></h4>
+						<p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
 					</div>
 				</div>
+				<div class="sliderContainer__item">
+					<img class="item__img" src="img/sec-6/slider__item2.png" alt="">
+					<div class="item__textContainer">
+						<h4>Imam White<img src="img/sec-6/sec-6__stars.svg" alt=""></h4>
+						<p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
+					</div>
+				</div>
+				<div class="sliderContainer__item">
+					<img class="item__img" src="img/sec-6/slider__item2.png" alt="">
+					<div class="item__textContainer">
+						<h4>Imam White<img src="img/sec-6/sec-6__stars.svg" alt=""></h4>
+						<p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
+					</div>
+				</div>
+			</div>
+			<div class="section-6__container">
 				<div class="section-6__ratingAndCustomersContainer">
 					<h2 id="title">What Our Customers Say</h2>
 					<div class="ratingAndCustomersContainer__ratingContainer">
