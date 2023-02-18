@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>kubik rubic</title>
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+	<main class="main">
+		<div class="main__container">
+			<section class="section1">
+				<header class="header">
+					<div class="header__container">
+						<nav class="header__navigationContainer">
+							<img src="img/logo.png" alt="logo" class="navigationContainer_headerLogo">
+							<ul class="navigationContainer__headerMenu">
+								<li><a href="#!" class="headerMenu_headerLink">Главная</a></li>
+								<li><a href="#!" class="headerMenu_headerLink">Виды</a></li>
+								<li><a href="#!" class="headerMenu_headerLink">Узоры</a></li>
+								<li><a href="#!" class="navigationContainer_headerButton_black">АЛГОРИТМЫ</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+				<div class="container">
+					<div class="section1__textContainer">
+						<h1 class="section1__textContainer_title">КУБИК РУБИКА —  САМАЯ ПОПУЛЯРНАЯ ГОЛОВОЛОМКА В МИРЕ </h1>
+						<p class="section1__textContainer_subTitle">У кубика рубика 43 252 003 274 489 856 000 возможных конфигураций и мы поможем одолеть их всех!</p>
+						<div class="section1__textContainer__buttonsContainer">
+							<a href="#!" class="buttonsContainer_black">ПРИЛОЖЕНИЕ</a>
+							<a href="#!" class="buttonsContainer_white">СОБРАТЬ</a>
+						</div>
+					</div>
+					<div class="section1__imgContainer">
+						<img src="img/kubik.png" alt="">
+					</div>
+				</div>
+			</section>
+            <section class="section2">
+                <div class="container section2__container">
+					<h2 class="section2_title">ОСновные виды кубика рубика</h2>
+					<p class="section2_subTitle">С помощью нашего приложения по сборке кубика, вы научитесь собирать разнообразные узоры, а также просто собирать его!</p>
+					<div class="section2__itemsContainer">
+						<div class="itemsContainer_item">
+							<h3 class="item_title">Кубик - 3x3</h3>
+							<p class="item_subTitle">Вы получите инструкцию, благодаря которой научитесь собирать кубик рубика 3x3</p>
+							<svg class="item_kubikImg" role="img" aria-label="3x3" viewBox="0 0 140 140">
+								<use href="img/sprite.svg#3x3"/>
+							</svg>
+							<a class="item_button_black" href="#!">Собрать</a>
+						</div>
+						<div class="itemsContainer_item">
+							<h3 class="item_title">Кубик - 4x4</h3>
+							<p class="item_subTitle">Вы получите инструкцию, благодаря которой научитесь собирать кубик рубика 4x4</p>
+							<svg class="item_kubikImg" role="img" aria-label="4x4" viewBox="0 0 140 140">
+								<use href="img/sprite.svg#4x4"/>
+							</svg>
+							<a class="item_button_black" href="#!">Собрать</a>
+						</div>
+						<div class="itemsContainer_item">
+							<h3 class="item_title">Кубик - 2x2</h3>
+							<p class="item_subTitle">Вы получите инструкцию, благодаря которой научитесь собирать кубик рубика 2x2</p>
+							<svg class="item_kubikImg" role="img" aria-label="2x2" viewBox="0 0 140 140">
+								<use href="img/sprite.svg#2x2"/>
+							</svg>
+							<a class="item_button_black" href="#!">Собрать</a>
+						</div>
+					</div>
+				</div>
+            </section>
+            <section class="section3">
+                <div class="container section3__container">
+					<h2 class="section3_title">ОБозначения сторон</h2>
+					<p class="section3_subTitle">Чтобы записывать движения граней кубика, придумали язык вращений. Благодаря нему, можно записывать и воспроизводить формулы.</p>
+					<div class="section3__informationContainer">
+						<div class="section3__designation">
+							<p class="designation_description">У кубика 6 центров, на каждом из которых свой цвет. Каждый центр вращается вокруг своей оси, и вокруг него вращаются все остальные элементы. По этой причине цвета всегда остаются друг напротив друга.</p>
+							<p class="designation_description">Так как на кубике всего 6 сторон, для каждой из них используется свое обозначение:</p>
+							<ul class="designation_list">
+								<li>R — правая сторона</li>
+								<li>L — левая</li>
+								<li>U — верхняя</li>
+								<li>D — нижняя</li>
+								<li>F — фронтальная</li>
+								<li>B — задняя</li>
+							</ul>
+						</div>
+						<div class="section3__itemsContainer">
+							<div class="section3__itemsContainer_item">
+								<img src="img/f2.png" alt="" class="item_img">
+								<div class="item_textContainer">
+									<h3 class="item_title">F2</h3>
+									<p class="item_subTitle">Если после буквы стоит 2, нужно крутить эту сторону на 180 градусов.</p>
+								</div>
+							</div>
+							<div class="section3__itemsContainer_item">
+								<img src="img/f`.png" alt="" class="item_img">
+								<div class="item_textContainer">
+									<h3 class="item_title">F’</h3>
+									<p class="item_subTitle">Если после буквы стоит штрих, нужно крутить сторону против часовой стрелки, как если бы мы смотрели на грань в лицо.</p>
+								</div>
+							</div>
+							<div class="section3__itemsContainer_item">
+								<img src="img/f.png" alt="" class="item_img">
+								<div class="item_textContainer">
+									<h3 class="item_title">F</h3>
+									<p class="item_subTitle">Просто буква означает, что нужно крутить сторонупо часовой стрелке, как если бы мы смотрели на грань в лицо.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+            <section class="section4 container">
+                <h2 class="section4_title">УСТРОЙСТВО КУБИКА РУБИКА</h2>
+                <p class="section4_subTitle">Знание устройства кубика — ваш серьезный инструмент при сборке, который позволяет выполнять правильные движения и не ошибаться на всех этапах сборки.</p>
+                <div class="section4_mainParts">
+                    <div class="mainParts_edgecorneritem">
+                        <div class="mainParts_item">
+                            <div class="item_textContainer">
+                                <h3 class="item_title">Ребра</h3>
+                                <p class="item_subTitle">Состоят из двух цветов, которые нельзя разъединить между собой</p>
+                            </div>
+                            <img src="" alt="" class="item_img">
+                        </div>
+                        <div class="mainParts_item">
+                            <div class="item_textContainer">
+                                <h3 class="item_title">Углы</h3>
+                                <p class="item_subTitle">Состоят из трех цветов, которые нельзя разъединить между собой</p>
+                            </div>
+                            <img src="" alt="" class="item_img">
+                        </div>
+                    </div>
+                    <div class="mainParts_item">
+                        <div class="item_textContainer">
+                            <h3 class="item_title">Центры</h3>
+                            <p class="item_subTitle">Определяют цвет стороны, никогда не меняют своего положения относительно других центров</p>
+                        </div>
+                        <img src="" alt="" class="item_img">
+                    </div>
+                </div>
+            </section>
+            <section class="section5 container">
+                <h2 class="section5_title">Главный алгоритм — Пиф-паф</h2>
+                <p class="section5_subTitle">Алгоритм, которым мы будем часто пользоваться во время сборки кубика Рубика состоит из 4 движений:</p>
+            </section>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+
+		</div>
+	</footer>
+</body>
+</html>
+</body>
+</html>

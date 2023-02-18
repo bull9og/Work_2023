@@ -1,0 +1,39 @@
+<!--? Всегда помещать иконку в тэг SVG, а также у скопированной иконки менять тэг svg на symbol ?-->
+<!--? У тега symbol менять значение fill на currentColor для того, чтобы менять цвет напрямую через scss ?-->
+<svg>
+	<symbol id="3x3" width="140" height="140" viewBox="0 0 140 140" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<rect y="0.000854492" width="40" height="40" fill="currentColor"/>
+		<rect x="50" y="0.000854492" width="40" height="40" fill="currentColor"/>
+		<rect x="100" y="0.000854492" width="40" height="40" fill="currentColor"/>
+		<rect x="50" y="50.0009" width="40" height="40" fill="currentColor"/>
+		<rect x="100" y="50.0009" width="40" height="40" fill="currentColor"/>
+		<rect y="50.0009" width="40" height="40" fill="currentColor"/>
+		<rect x="50" y="100.001" width="40" height="40" fill="currentColor"/>
+		<rect x="100" y="100.001" width="40" height="40" fill="currentColor"/>
+		<rect y="100.001" width="40" height="40" fill="currentColor"/>
+	</symbol>
+	<symbol id="4x4" width="140" height="140" viewBox="0 0 140 140" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<rect y="36.843" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect y="0.000854492" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="36.8422" y="36.843" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="36.8422" y="0.000854492" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="73.6842" y="36.843" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="73.6842" y="0.000854492" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="110.526" y="36.843" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="110.526" y="0.000854492" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="36.8422" y="73.6852" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="73.6842" y="73.6852" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="110.526" y="73.6852" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect y="73.6852" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="36.8422" y="110.527" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="73.6842" y="110.527" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect x="110.526" y="110.527" width="29.4737" height="29.4737" fill="currentColor"/>
+		<rect y="110.527" width="29.4737" height="29.4737" fill="currentColor"/>
+	</symbol>
+	<symbol id="2x2" width="140" height="140" viewBox="0 0 140 140" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<rect y="0.000854492" width="62.2222" height="62.2222" fill="currentColor"/>
+		<rect x="77.7778" y="0.000854492" width="62.2222" height="62.2222" fill="currentColor"/>
+		<rect x="77.7778" y="77.7787" width="62.2222" height="62.2222" fill="currentColor"/>
+		<rect y="77.7787" width="62.2222" height="62.2222" fill="currentColor"/>
+	</symbol>
+</svg>
