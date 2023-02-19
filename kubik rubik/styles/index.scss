@@ -11,6 +11,28 @@
 		border-bottom: 2px solid #1B1B1D;
 	}
 }
+@mixin footerLink {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 29px;
+	color: #707070;
+	transition: 200ms;
+	&:hover {
+		color: #1B1B1D;
+	}
+}
+@mixin footerMenu {
+	li {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 29px;
+		color: #707070;
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
@@ -68,6 +90,12 @@ a[class$=_white] {
 	border: 2px solid #1B1B1D;
 	filter: drop-shadow(0px 30px 60px rgba(163, 168, 179, 0.15));
 	border-radius: 63px;
+}
+p[class$=_information] {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 29px;
+	color: #1B1B1D;
 }
 
 //* HEADER *//
@@ -193,6 +221,7 @@ a[class$=_white] {
 .section3 {
 	max-width: 100%;
 	margin-top: 250px;
+	margin-bottom: 141px;
 }
 .section3__container {
 	flex-direction: column;
@@ -207,56 +236,183 @@ a[class$=_white] {
 	text-align: center;
 }
 .section3__informationContainer {
-	display: flex;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 660px;
+	grid-gap: 100px;
 }
 .section3__designation {
+	background: #FFFFFF;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+	border-radius: 60px;
+	padding: 60px 74px;
+	width: 560px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
 }
-.designation_description {
+.designation_information {
+	&:first-child {
+		margin-bottom: 44px;
+	}
 }
 .designation_list {
-}
-.section3__itemsContainer {
+	margin-top: 25px;
+	li {
+		font-style: italic;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 29px;
+		color: #1B1B1D;
+	}
 }
 .section3__itemsContainer_item {
 	display: flex;
 	align-items: center;
+	margin-bottom: 81px;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
-.item_img {
+.section3__item_img {
 	width: 134px;
 	height: 132px;
 	margin-right: 46px;
 }
-.item_textContainer {
-}
-.item_title {
-}
-.item_subTitle {
+.item_subTitle-sec3_information {
+	min-width: 480px;
 }
 //* SECTION_3 - END *//
 
 //* SECTION_4 *//
+.section4 {
+	max-width: 100%;
+	background-color: #FFFFFF;
+}
+.section4__container {
+	padding: 104px 60px 116px;
+	flex-direction: column;
+}
+.section4_title {
+	margin-bottom: 10px;
+}
+.section4_subTitle {
+	text-align: center;
+	max-width: 782px;
+	margin: 0 auto 90px;
+}
+.section4_mainParts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mainParts_edgecorner_item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 118px;
+	margin-bottom: 70px;
+}
+.mainParts_item {
+	background: #EEEFF1;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+	border-radius: 34px;
+	width: 601px;
+	display: flex;
+	align-items: center;
+	padding: 46px 60px;
+	justify-content: space-between;
+}
+.item_subTitle_information {
+	width: 315px;
+}
+.item_img {
+	margin: 0;
+}
 //* SECTION_4 - END *//
 
 //* SECTION_5 *//
+.section5 {
+	max-width: 100%;
+}
+.section5__container {
+	padding: 124px 0 196px;
+	flex-direction: column;
+}
+.section5_title {
+	margin-bottom: 10px;
+}
+.section5_subTitle {
+	width: 715px;
+	margin: 0 auto 74px;
+	text-align: center;
+}
+.section5_imgItemsContainer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 90px;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.section5__item_img {
+	margin-bottom: 30px;
+}
+.section5__item_title-big {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 69px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1B1B1D;
+}
+.section5_description_postInf {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 29px;
+	text-align: center;
+	color: #000000;
+}
 //* SECTION_5 - END *//
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//* FOOTER *//
+.footer {
+	max-width: 100%;
+	background-color: #FFFFFF;
+}
+.footer__container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 60px 60px;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 295px 289px 114px 138px 118px;
+	justify-content: space-between;
+}
+.footer_title {
+	margin-bottom: 25px;
+}
+.contactsContainer__list {
+	@include footerMenu;
+}
+.footer_link {
+	@include footerLink;
+}
+.footer__menuContainer {
+	@include footerMenu;
+}
+.footer__kubikiContainer {
+	@include footerMenu;
+}
+.footer__lessonsContainer {
+	@include footerMenu;
+}
+.footer__secondFooterContainer {
+	max-width: 1440px;
+	margin: 0 auto;
+	border-top: 2px solid rgba(112, 112, 112, 0.45);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 0;
+}
+//* FOOTER - END *//
