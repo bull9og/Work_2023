@@ -1,0 +1,17 @@
+body {
+  font-family: "Poppins";
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+}
+
+svg {
+  display: block;
+}
+
+a {
+  font-family: "Poppins";
+}
