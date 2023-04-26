@@ -1,0 +1,18 @@
+body {
+  font-family: "Outfit";
+  min-width: 320px;
+  min-height: 100vh;
+  background: #09090A;
+}
+
+img {
+  display: block;
+}
+
+svg {
+  display: block;
+}
+
+a {
+  font-family: "Outfit";
+}
