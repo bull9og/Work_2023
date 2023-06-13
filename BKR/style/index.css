@@ -1,0 +1,884 @@
+@charset "UTF-8";
+/*---!!ОБНУЛЕНИЕ!!---*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  -wedkit-box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*------------------------------------------------------*/
+body {
+  font-family: "DM Sans";
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+}
+
+svg {
+  display: block;
+}
+
+.titleContainer {
+  margin-bottom: 18px;
+}
+.titleContainer h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+}
+
+.titleSecondContainer {
+  margin-bottom: 59px;
+}
+.titleSecondContainer h2 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  color: #171B1B;
+}
+
+div[class$=-white] h1, div[class$=-white] h2 {
+  color: #FFFFFF;
+}
+div[class$=-white] h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+div[class$=-white] h2 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header {
+  background: #FFFFFF;
+  width: 100%;
+  padding: 16px 0 25px 0;
+}
+.header .logoContainer .logo {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header ul li {
+  margin-right: 45px;
+}
+.header ul li:last-child {
+  margin-right: 0;
+}
+.header ul li a {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: right;
+  color: #000000;
+}
+.header .btnContactContainer .btnContact {
+  display: block;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  border-radius: 2px;
+  padding: 11px 41px 13px 41px;
+}
+
+.main .section1 {
+  max-width: 100%;
+  background: rgba(231, 212, 190, 0.44);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 790px;
+  position: relative;
+  margin-bottom: 160px;
+}
+.main .section1::before {
+  content: url("../img/pngegg (3) 1.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .section1 .section1__textContainer {
+  width: 470px;
+}
+.main .section1 .section1__textContainer .section1__textContainer_titleContainer p {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 21px;
+}
+.main .section1 .section1__textContainer .section1__textContainer_titleContainer h1 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 80px;
+  color: #000000;
+  margin-bottom: 27px;
+  position: relative;
+}
+.main .section1 .section1__textContainer .section1__textContainer_titleContainer h1::after {
+  content: url("../img/Combined Shape.png");
+  position: absolute;
+  right: 140px;
+  top: -40px;
+}
+.main .section1 .section1__textContainer .section1__textContainer_descriptionContainer p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+.main .section1 .section1__imgContainer img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.main .section2 .section2__imgContainer {
+  position: relative;
+}
+.main .section2 .section2__imgContainer img {
+  border-radius: 10px;
+}
+.main .section2 .section2__imgContainer img:last-child {
+  position: absolute;
+  top: 224px;
+  left: 70px;
+}
+.main .section2 .section2__imgContainer::before {
+  content: url("../img/Shape.png");
+  position: absolute;
+  top: 20%;
+  left: 0;
+  z-index: -2;
+}
+.main .section2 .section2__imgContainer::after {
+  content: url("../img/Combined Shape(2).png");
+  position: absolute;
+  z-index: -1;
+  top: 74px;
+  right: -140px;
+}
+.main .section2 .section2__informationContainer {
+  max-width: 570px;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__titleContainer {
+  margin-bottom: 18px;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__titleContainer h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__titleSecondContainer {
+  margin-bottom: 59px;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__titleSecondContainer h2 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  color: #171B1B;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__descriptionContainer {
+  max-width: 370px;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__descriptionContainer .section2__informationContainer__descriptionContainer__listElem-active {
+  margin-bottom: 35px;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__descriptionContainer .section2__informationContainer__descriptionContainer__listElem-active .section2__informationContainer__descriptionContainer__listElem_number {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+  margin-bottom: 12px;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__descriptionContainer .section2__informationContainer__descriptionContainer__listElem-active .section2__informationContainer__descriptionContainer__listElem_title-active {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 22px;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__descriptionContainer .section2__informationContainer__descriptionContainer__listElem-active .section2__informationContainer__descriptionContainer__listElem_desc {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.496405);
+  margin-bottom: 35px;
+}
+.main .section2 .section2__informationContainer .section2__informationContainer__descriptionContainer .section2__informationContainer__descriptionContainer__listElem .section2__informationContainer__descriptionContainer__listElem_title {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #171B1B;
+  margin-bottom: 16px;
+}
+.main .section3 {
+  margin-top: 210px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .section3 .titleContainerCenter {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+  margin-bottom: 18px;
+}
+.main .section3 .titleSecondContainerCenter {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  color: #171B1B;
+  margin-bottom: 70px;
+}
+.main .section3 .section3__advantagesItemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item {
+  cursor: pointer;
+  padding: 48px 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: 900ms;
+  -o-transition: 900ms;
+  transition: 900ms;
+}
+.main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item:nth-child(2) {
+  padding: 43.5px 32px;
+}
+.main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item:nth-child(3) {
+  padding: 48.5px 32px;
+}
+.main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item:hover {
+  overflow: hidden;
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 900ms;
+  -o-transition: 900ms;
+  transition: 900ms;
+}
+.main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item:hover svg path {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  fill: #FFFFFF;
+}
+.main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item:hover::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  background: #F9BF77;
+  -webkit-animation: krug 900ms ease-in both;
+          animation: krug 900ms ease-in both;
+}
+@-webkit-keyframes krug {
+  0% {
+    width: 0;
+    height: 0;
+    right: 0;
+    top: 0;
+  }
+  100% {
+    width: 220%;
+    height: 220%;
+    right: -300px;
+    top: -200px;
+  }
+}
+@keyframes krug {
+  0% {
+    width: 0;
+    height: 0;
+    right: 0;
+    top: 0;
+  }
+  100% {
+    width: 220%;
+    height: 220%;
+    right: -300px;
+    top: -200px;
+  }
+}
+.main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item svg {
+  margin-bottom: 58px;
+}
+.main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item h1 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #171B1B;
+  margin-bottom: 18px;
+}
+.main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.496405);
+}
+.main .section4 {
+  padding-top: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 112px;
+}
+.main .section4 .section4__titlesContainer .section4__titlesSecondContainer {
+  max-width: 519px;
+  margin-bottom: 69px;
+}
+.main .section4 .section4__gridBakedsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.main .section4 .section4__gridBakedsContainer #active {
+  grid-column: 1/3;
+  background: url("../img/Baked.png") center center/cover no-repeat;
+  padding: 185px 48px 33px;
+}
+.main .section4 .section4__gridBakedsContainer #active .gridBaked_secondTitle h2 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.main .section4 .section4__gridBakedsContainer #active .gridBaked_title h1 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+  width: 294px;
+  margin-bottom: 18px;
+}
+.main .section4 .section4__gridBakedsContainer #active .gridBaked_descriptionAndPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .section4 .section4__gridBakedsContainer #active .gridBaked_descriptionAndPrice .gridBaked_description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.502972);
+  width: 322px;
+}
+.main .section4 .section4__gridBakedsContainer #active .gridBaked_descriptionAndPrice .gridBaked_price {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: right;
+  color: #FFFFFF;
+}
+.main .section4 .section4__gridBakedsContainer .section4__gridBakedsContainer__gridBaked {
+  cursor: pointer;
+}
+.main .section4 .section4__gridBakedsContainer .section4__gridBakedsContainer__gridBaked .gridBaked_informContainer {
+  padding: 25px 32px 42px;
+}
+.main .section4 .section4__gridBakedsContainer .section4__gridBakedsContainer__gridBaked .gridBaked_informContainer .gridBaked_secondTitle h2 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+  margin-bottom: 12px;
+}
+.main .section4 .section4__gridBakedsContainer .section4__gridBakedsContainer__gridBaked .gridBaked_informContainer .gridBaked_titleAndPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .section4 .section4__gridBakedsContainer .section4__gridBakedsContainer__gridBaked .gridBaked_informContainer .gridBaked_titleAndPrice h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #171B1B;
+}
+.main .section4 .section4__gridBakedsContainer .section4__gridBakedsContainer__gridBaked .gridBaked_informContainer .gridBaked_titleAndPrice p {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: right;
+  color: #171B1B;
+}
+.main .section4 .section4__buttonExplore {
+  text-align: center;
+  border: 1px solid rgba(23, 27, 27, 0.240602);
+  border-radius: 2px;
+  margin: 64px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .section4 .section4__buttonExplore a {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #171B1B;
+  padding: 14px 59px;
+}
+.main .section5 {
+  background-color: #171B1B;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 52.5px 0;
+}
+.main .section5 .titleSecondContainerCenter-white {
+  margin-bottom: 69px;
+}
+.main .section5 .section5__howWeWorkItemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .section5 .section5__howWeWorkItemsContainer .section5__howWeWorkItem {
+  background: #FFFFFF;
+  padding: 41px 33px 56px 33px;
+  -webkit-transition: 850ms;
+  -o-transition: 850ms;
+  transition: 850ms;
+  position: relative;
+  overflow: hidden;
+}
+.main .section5 .section5__howWeWorkItemsContainer .section5__howWeWorkItem:hover {
+  padding: 61px 49px 76px 49px;
+  -webkit-transition: 850ms;
+  -o-transition: 850ms;
+  transition: 850ms;
+  cursor: pointer;
+  margin: -20px -16px;
+  z-index: 1;
+}
+.main .section5 .section5__howWeWorkItemsContainer .section5__howWeWorkItem:hover::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 0;
+  border-radius: 100%;
+  background: #F9BF77;
+  -webkit-animation: krug 750ms ease-in both;
+          animation: krug 750ms ease-in both;
+}
+@keyframes krug {
+  0% {
+    width: 0;
+    height: 0;
+    right: 0;
+    top: 0;
+  }
+  100% {
+    width: 280%;
+    height: 225%;
+    right: -400px;
+    top: -400px;
+  }
+}
+.main .section5 .section5__howWeWorkItemsContainer .section5__howWeWorkItem .section5__howWeWorkItem_numberContainer {
+  margin-bottom: 96px;
+}
+.main .section5 .section5__howWeWorkItemsContainer .section5__howWeWorkItem .section5__howWeWorkItem_numberContainer p {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+}
+.main .section5 .section5__howWeWorkItemsContainer .section5__howWeWorkItem .section5__howWeWorkItem_titleContainer {
+  margin-bottom: 18px;
+}
+.main .section5 .section5__howWeWorkItemsContainer .section5__howWeWorkItem .section5__howWeWorkItem_titleContainer h1 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #171B1B;
+}
+.main .section5 .section5__howWeWorkItemsContainer .section5__howWeWorkItem .section5__howWeWorkItem_descriptionContainer p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.496405);
+  width: 204px;
+}
+.main .section6 {
+  background-color: #171B1B;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 80px;
+  padding-top: 55px;
+}
+.main .section6 .section6__titlesContainer {
+  max-width: 617px;
+}
+.main .section6 .section6__titlesContainer .titleContainer_left-white h1 {
+  text-align: left;
+}
+.main .section6 .section6__titlesContainer .titleSecondContainer_left-white {
+  margin-bottom: 69px;
+}
+.main .section6 .section6__titlesContainer .titleSecondContainer_left-white h2 {
+  text-align: left;
+}
+.main .section6 .section6__deliciousBreadItemsContainer {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 570px 270px 270px;
+  grid-template-rows: repeat(2, 352px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main {
+  grid-row: 1/3;
+  background: #FFFFFF;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_imgContainer {
+  margin-bottom: 25px;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_imgContainer img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_nameContainer {
+  padding-left: 48px;
+  margin-bottom: 16px;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_nameContainer h2 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_titleContainer {
+  padding-left: 48px;
+  margin-bottom: 18px;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_titleContainer h1 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #171B1B;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_informationContainer {
+  padding: 0 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_informationContainer .section6__deliciousBreadItem-main_desc {
+  font-family: "DM Sans";
+  width: 322px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.496405);
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_informationContainer .section6__deliciousBreadItem-main_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: right;
+  color: #171B1B;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem-main .section6__deliciousBreadItem-main_informationContainer .section6__deliciousBreadItem-main_time img {
+  margin-right: 11px;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem {
+  background: #FFFFFF;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem .section6__deliciousBreadItem_imgContainer {
+  margin-bottom: 11px;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem .section6__deliciousBreadItem_nameContainer {
+  padding: 0 32px;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem .section6__deliciousBreadItem_nameContainer h2 {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.496405);
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem .section6__deliciousBreadItem_nameContainer .section6__deliciousBreadItem_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: right;
+  color: #171B1B;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem .section6__deliciousBreadItem_nameContainer .section6__deliciousBreadItem_time img {
+  margin-right: 7px;
+  width: 12px;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem .section6__deliciousBreadItem_titleContainer {
+  padding: 0 32px;
+}
+.main .section6 .section6__deliciousBreadItemsContainer .section6__deliciousBreadItem .section6__deliciousBreadItem_titleContainer h1 {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #171B1B;
+}
+.main .section6 .section6__buttonExplore {
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  border-radius: 2px;
+  margin: 64px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .section6 .section6__buttonExplore a {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 14px 59px;
+}

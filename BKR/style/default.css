@@ -1,8 +1,7 @@
 body {
-  font-family: "Outfit";
+  font-family: "DM Sans";
   min-width: 320px;
   min-height: 100vh;
-  background: #09090A;
 }
 
 img {
@@ -11,8 +10,4 @@ img {
 
 svg {
   display: block;
-}
-
-a {
-  font-family: "Outfit";
 }
