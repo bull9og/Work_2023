@@ -721,4 +721,90 @@ div[class$=-white] {
 			}
 		}
 	}
+
+	.section7 {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 65px;
+		padding-bottom: 95px;
+		.section7__titlesContainer {
+			max-width: 617px;
+			.section7__titleContainerCenter {
+				h1 {
+					font-family: 'Oswald';
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 32px;
+					text-align: center;
+					letter-spacing: 3px;
+					text-transform: uppercase;
+					color: #171B1B;
+					margin-bottom: 18px;
+				}
+			}
+			.section7__titleSecondContainerCenter {
+				h2 {
+					font-family: 'Ultra';
+					font-weight: 400;
+					font-size: 56px;
+					line-height: 64px;
+					text-align: center;
+					color: #171B1B;
+					margin-bottom: 53px;
+				}
+			}
+		}
+		.section7__commentsContainer {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			align-items: center;
+			.section7__commentsContainer__comment{
+				&:hover {
+					background-color: #F9BF77;
+					padding: 47px 61px 63px 47px;
+					margin: -15px -15px -15px -15px;
+					transition: 650ms;
+					.section7__commentsContainer__comment__starsAndAvatar__stars {
+						margin-top: 20px;
+						path {
+							transition: 450ms;
+							fill: #e9e8b8;
+						}
+					}
+				}
+				transition: 200ms;
+				padding: 32px 46px 48px 32px;
+				.section7__commentsContainer__comment__starsAndAvatar {
+					display: flex;
+					align-items: flex-start;
+					justify-content: space-between;
+					.section7__commentsContainer__comment__starsAndAvatar__stars {
+						margin-top: 20px;
+					}
+					.section7__commentsContainer__comment__starsAndAvatar__avatar {
+					}
+				}
+				.section7__commentsContainer__comment__textContainer {
+					h1 {
+						font-family: 'Oswald';
+						font-weight: 400;
+						font-size: 24px;
+						line-height: 32px;
+						color: #171B1B;
+						max-width: 110px;
+						margin-bottom: 22px;
+					}
+					p {
+						font-family: 'DM Sans';
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 32px;
+						color: rgba(51, 51, 51, 0.496405);
+						max-width: 306px;
+					}
+				}
+			}
+		}
+	}
 }
