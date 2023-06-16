@@ -978,3 +978,286 @@ div[class$=-white] h2 {
   color: rgba(51, 51, 51, 0.496405);
   max-width: 306px;
 }
+.main .section8 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .section8 .section8__informationsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .section8 .section8__informationsContainer .section8__titleContainerCenter h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: left;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+  margin-bottom: 18px;
+}
+.main .section8 .section8__informationsContainer .section8__titleSecondContainerCenter h2 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: left;
+  color: #171B1B;
+  margin-bottom: 62px;
+  max-width: 287px;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 59px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__address img {
+  margin-right: 52px;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__address .section8__informationsContainer__addressAndPhoneContainer__address_text p:first-child {
+  margin-bottom: 12px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__address .section8__informationsContainer__addressAndPhoneContainer__address_text h1 {
+  margin-bottom: 22px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #171B1B;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__address .section8__informationsContainer__addressAndPhoneContainer__address_text p:last-child {
+  width: 147px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.496405);
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__phone img {
+  margin-right: 52px;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__phone .section8__informationsContainer__addressAndPhoneContainer__phone_text p:first-child {
+  margin-bottom: 12px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #171B1B;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__phone .section8__informationsContainer__addressAndPhoneContainer__phone_text h1 {
+  margin-bottom: 22px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #171B1B;
+}
+.main .section8 .section8__informationsContainer .section8__informationsContainer__addressAndPhoneContainer .section8__informationsContainer__addressAndPhoneContainer__phone .section8__informationsContainer__addressAndPhoneContainer__phone_text p:last-child {
+  width: 147px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #171B1B;
+}
+.main .section8 .section8__informationsContainer .section8__buttonExplore {
+  text-align: center;
+  border: 1px solid rgba(23, 27, 27, 0.240602);
+  border-radius: 2px;
+  margin: 64px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .section8 .section8__informationsContainer .section8__buttonExplore a {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #171B1B;
+  padding: 14px 59px;
+}
+
+footer {
+  max-width: 100%;
+  background: #171B1B;
+}
+footer .footerContainer {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footerItemsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 65px 0;
+}
+footer .footerItemsContainer .footerTitle h1 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+footer .footerItemsContainer .footerMenu h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+footer .footerItemsContainer .footerMenu li a {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.502972);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+footer .footerItemsContainer .footerMenu li a:hover {
+  color: #FFFFFF;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+footer .footerItemsContainer .footerService h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+footer .footerItemsContainer .footerService li a {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.502972);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+footer .footerItemsContainer .footerService li a:hover {
+  color: #FFFFFF;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+footer .footerItemsContainer .footerSocial h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+footer .footerItemsContainer .footerSocial .footerSocial__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footerItemsContainer .footerSocial .footerSocial__links a {
+  margin-right: 10px;
+}
+footer .footerItemsContainer .footerSocial .footerSocial__links a:last-child {
+  margin-right: 0;
+}
+footer .footerSecond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+  border-top: 2.5px solid #292D2D;
+}
+footer .footerSecond p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.502972);
+}
+footer .footerSecond .footerSecond__privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footerSecond .footerSecond__privacy a:first-child {
+  margin-right: 90px;
+}
+footer .footerSecond .footerSecond__privacy a {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: right;
+  color: #FFFFFF;
+}
