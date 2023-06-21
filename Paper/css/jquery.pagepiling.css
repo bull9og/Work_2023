@@ -7,7 +7,6 @@
  * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
  */
 html, body {
-    overflow:hidden;
     margin:0;
     padding:0;
     /*Avoid flicker on slides transitions for mobile phones #336 */
@@ -34,6 +33,7 @@ html, body {
     /* custom */
 }
 #pp-nav {
+	display: none;
     position: fixed;
     z-index: 100;
     top: 300px;
