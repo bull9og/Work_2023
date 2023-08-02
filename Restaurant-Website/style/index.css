@@ -110,7 +110,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   -webkit-transition: 350ms;
-  -o-transition: 350ms;
   transition: 350ms;
 }
 #Btn-red img {
@@ -202,7 +201,6 @@ header .headerContainer .header__searchAndShopContainer a:last-child {
   padding: 18px;
   position: relative;
   -webkit-transition: 350ms;
-  -o-transition: 350ms;
   transition: 350ms;
 }
 header .headerContainer .header__searchAndShopContainer a:last-child:hover {
@@ -487,7 +485,6 @@ header .headerContainer .header__searchAndShopContainer a:last-child:hover::afte
 .section1Container__leftInfContainer .section1Container__leftInfContainer_titleDescBtnContainer .section1Container__leftInfContainer_titleDescBtnContainer_btn a {
   -webkit-transition: -webkit-transform 350ms;
   transition: -webkit-transform 350ms;
-  -o-transition: transform 350ms;
   transition: transform 350ms;
   transition: transform 350ms, -webkit-transform 350ms;
 }
@@ -500,7 +497,6 @@ header .headerContainer .header__searchAndShopContainer a:last-child:hover::afte
   border: 1px solid #F95555;
   border-radius: 4px 20px;
   -webkit-transition: 350ms;
-  -o-transition: 350ms;
   transition: 350ms;
   margin-left: 40px;
 }

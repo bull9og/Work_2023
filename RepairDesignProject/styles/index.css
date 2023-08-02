@@ -216,7 +216,6 @@ main {
   text-transform: uppercase;
   color: #FFFFFF;
   -webkit-transition: 350ms;
-  -o-transition: 350ms;
   transition: 350ms;
 }
 .navContainer__listMenuContainer li a:hover {
@@ -243,7 +242,6 @@ main {
   border-radius: 2px;
   padding: 12px 30px 10px 30px;
   -webkit-transition: 350ms;
-  -o-transition: 350ms;
   transition: 350ms;
 }
 .navContainer__buttonContainer a:hover {
@@ -307,7 +305,6 @@ main {
   border-radius: 2px;
   margin-right: 20px;
   -webkit-transition: 350ms;
-  -o-transition: 350ms;
   transition: 350ms;
 }
 .section-1__buttonsContainer a:hover {
@@ -516,7 +513,6 @@ main {
 }
 .section-3__videoContainer #video {
   -webkit-transition: 290ms;
-  -o-transition: 290ms;
   transition: 290ms;
 }
 .section-3__videoContainer #video:hover {
@@ -627,7 +623,6 @@ main {
   color: #E3B873;
   background-color: #FFFFFF;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -1025,7 +1020,6 @@ main {
   font-size: 20px;
   color: #FFFFFF;
   -webkit-transition: 350ms;
-  -o-transition: 350ms;
   transition: 350ms;
 }
 .menuContainer__listContainer li a:hover {
@@ -1394,7 +1388,6 @@ main {
   text-transform: uppercase;
   color: #FFFFFF;
   -webkit-transition: 350ms;
-  -o-transition: 350ms;
   transition: 350ms;
 }
 .navContainer__listMenuContainer li a:hover {
@@ -1421,7 +1414,6 @@ main {
   border-radius: 2px;
   padding: 12px 30px 10px 30px;
   -webkit-transition: 350ms;
-  -o-transition: 350ms;
   transition: 350ms;
 }
 .navContainer__buttonContainer a:hover {

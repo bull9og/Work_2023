@@ -162,13 +162,11 @@ header .menu li a {
   background: url("../img/IMAGE.png") lightgray 50%/100% no-repeat;
   position: relative;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section1:hover {
   background-size: 112%;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section1::before {
@@ -195,13 +193,11 @@ header .menu li a {
   background: url("../img/IMAGE (1).png") lightgray 50%/100% no-repeat;
   position: relative;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section2:hover {
   background-size: 112%;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section2::before {
@@ -220,13 +216,11 @@ header .menu li a {
   background: url("../img/IMAGE (2).png") lightgray 50%/100% no-repeat;
   position: relative;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section3:hover {
   background-size: 112%;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section3::before {
@@ -253,13 +247,11 @@ header .menu li a {
   background: url("../img/IMAGE (3).png") lightgray 50%/100% no-repeat;
   position: relative;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section4:hover {
   background-size: 112%;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section4::before {
@@ -286,13 +278,11 @@ header .menu li a {
   background: url("../img/IMAGE (4).png") lightgray 50%/100% no-repeat;
   position: relative;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section5:hover {
   background-size: 112%;
   -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 .section5::before {

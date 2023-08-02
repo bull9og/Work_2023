@@ -169,7 +169,6 @@ footer {
   color: #FF6100;
   background: #FFFFFF;
   -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid #FF6100;
 }
@@ -190,7 +189,6 @@ footer {
   color: #4F4F4F;
   background: #FFFFFF;
   -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid #4F4F4F;
 }

@@ -397,7 +397,6 @@ div[class$=-white] h2 {
           align-items: center;
   position: relative;
   -webkit-transition: 900ms;
-  -o-transition: 900ms;
   transition: 900ms;
 }
 .main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item:nth-child(2) {
@@ -412,12 +411,10 @@ div[class$=-white] h2 {
       -ms-transform: translateY(-20px);
           transform: translateY(-20px);
   -webkit-transition: 900ms;
-  -o-transition: 900ms;
   transition: 900ms;
 }
 .main .section3 .section3__advantagesItemsContainer .section3__advantagesItemsContainer__item:hover svg path {
   -webkit-transition: 2s;
-  -o-transition: 2s;
   transition: 2s;
   fill: #FFFFFF;
 }
@@ -635,7 +632,6 @@ div[class$=-white] h2 {
   background: #FFFFFF;
   padding: 41px 33px 56px 33px;
   -webkit-transition: 850ms;
-  -o-transition: 850ms;
   transition: 850ms;
   position: relative;
   overflow: hidden;
@@ -643,7 +639,6 @@ div[class$=-white] h2 {
 .main .section5 .section5__howWeWorkItemsContainer .section5__howWeWorkItem:hover {
   padding: 61px 49px 76px 49px;
   -webkit-transition: 850ms;
-  -o-transition: 850ms;
   transition: 850ms;
   cursor: pointer;
   margin: -20px -16px;
@@ -926,7 +921,6 @@ div[class$=-white] h2 {
 }
 .main .section7 .section7__commentsContainer .section7__commentsContainer__comment {
   -webkit-transition: 200ms;
-  -o-transition: 200ms;
   transition: 200ms;
   padding: 32px 46px 48px 32px;
 }
@@ -935,7 +929,6 @@ div[class$=-white] h2 {
   padding: 47px 61px 63px 47px;
   margin: -15px -15px -15px -15px;
   -webkit-transition: 650ms;
-  -o-transition: 650ms;
   transition: 650ms;
 }
 .main .section7 .section7__commentsContainer .section7__commentsContainer__comment:hover .section7__commentsContainer__comment__starsAndAvatar__stars {
@@ -943,7 +936,6 @@ div[class$=-white] h2 {
 }
 .main .section7 .section7__commentsContainer .section7__commentsContainer__comment:hover .section7__commentsContainer__comment__starsAndAvatar__stars path {
   -webkit-transition: 450ms;
-  -o-transition: 450ms;
   transition: 450ms;
   fill: #e9e8b8;
 }
@@ -1163,13 +1155,11 @@ footer .footerItemsContainer .footerMenu li a {
   line-height: 32px;
   color: rgba(255, 255, 255, 0.502972);
   -webkit-transition: 300ms;
-  -o-transition: 300ms;
   transition: 300ms;
 }
 footer .footerItemsContainer .footerMenu li a:hover {
   color: #FFFFFF;
   -webkit-transition: 300ms;
-  -o-transition: 300ms;
   transition: 300ms;
 }
 footer .footerItemsContainer .footerService h1 {
@@ -1189,13 +1179,11 @@ footer .footerItemsContainer .footerService li a {
   line-height: 32px;
   color: rgba(255, 255, 255, 0.502972);
   -webkit-transition: 300ms;
-  -o-transition: 300ms;
   transition: 300ms;
 }
 footer .footerItemsContainer .footerService li a:hover {
   color: #FFFFFF;
   -webkit-transition: 300ms;
-  -o-transition: 300ms;
   transition: 300ms;
 }
 footer .footerItemsContainer .footerSocial h1 {
