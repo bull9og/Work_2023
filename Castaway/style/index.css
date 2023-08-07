@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*---!!ОБНУЛЕНИЕ!!---*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  -wedkit-box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*------------------------------------------------------*/
+body {
+  background: #191919;
+  min-height: 100%;
+  width: 100%;
+  font-family: "DM sans";
+  color: #FFFFFF;
+}
+
+.main {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 3.15rem;
+}
+
+.mainScreen {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  padding: 2.65rem 0;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.headerMenu li {
+  margin-right: 2.5rem;
+}
+.headerMenu li:last-child {
+  margin-left: 0;
+}
+.headerMenu li a {
+  color: #FFFFFF;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.headerMenu li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #118DA8;
+}
+
+.mainScreenContainer {
+  padding-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainScreenImg img {
+  border-radius: 0.75rem;
+  width: 100%;
+  height: 100%;
+}
+
+.mainScreenContent {
+  max-width: 32.875rem;
+  margin: 0 auto;
+}
+
+.mainScreenTitle {
+  font-size: 4.375rem;
+  font-weight: 400;
+  line-height: 5.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 6rem;
+}
+.mainScreenTitle span {
+  font-size: 4.6875rem;
+  font-weight: 400;
+  line-height: 5.5rem;
+  letter-spacing: 0.2rem;
+  position: relative;
+}
+.mainScreenTitle span::before {
+  content: url("../img/borderBottom.svg");
+  position: absolute;
+  top: 0;
+  left: -7px;
+}
+.mainScreenTitle b {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.mainScreenList p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.mainScreenList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mainScreenList ul li {
+  margin-right: 1.05rem;
+}
+.mainScreenList ul li:last-child {
+  margin-right: 0;
+}

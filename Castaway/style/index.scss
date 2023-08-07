@@ -1,0 +1,112 @@
+@import "obnulenie.scss";
+@import "fonts.scss";
+
+
+body {
+	background: #191919;
+	min-height: 100%;
+	width: 100%;
+	font-family: 'DM sans';
+	color: #FFFFFF;
+}
+.main {
+	max-width: 1550px;
+	margin: 0 auto;
+	padding: 0 3.15rem;
+}
+
+
+.mainScreen {
+	width: 100%;
+}
+.header {
+	width: 100%;
+	padding: 2.65rem 0;
+}
+.headerContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.headerMenu {
+	display: flex;
+	align-items: center;
+	li {
+		margin-right: 2.5rem;
+		&:last-child {
+			margin-left: 0;
+		}
+		a {
+			color: #FFFFFF;
+			font-size: 1.0625rem;
+			font-weight: 400;
+			line-height: 1.6875rem;
+			transition: 0.3s;
+			&:hover {
+				transition: 0.3s;
+				color: #118DA8;
+			}
+		}
+	}
+}
+.mainScreenContainer {
+	padding-top: 2.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+.mainScreenImg {
+	img {
+		border-radius: 0.75rem;
+		width: 100%;
+		height: 100%;
+	}
+}
+.mainScreenContent {
+	max-width: 32.875rem;
+	margin: 0 auto;
+}
+.mainScreenTitle {
+	font-size: 4.375rem;
+	font-weight: 400;
+	line-height: 5.5rem;
+	letter-spacing: 0.2rem;
+	margin-bottom: 6rem;
+	span {
+		font-size: 4.6875rem;
+		font-weight: 400;
+		line-height: 5.5rem;
+		letter-spacing: 0.2rem;
+		position: relative;
+		&::before {
+			content: url('../img/borderBottom.svg');
+			position: absolute;
+			top: 0;
+			left: -7px;
+		}
+	}
+	b {
+		font-size: 5rem;
+		font-weight: 700;
+		line-height: 5.5rem;
+		letter-spacing: 0.2rem;
+	}
+}
+.mainScreenList {
+	p {
+		font-size: 0.9375rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	ul {
+		display: flex;
+		align-items: center;
+		li {
+			margin-right: 1.05rem;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
