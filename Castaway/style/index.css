@@ -91,6 +91,23 @@ body {
   padding: 0 3.15rem;
 }
 
+.btnBlue {
+  border-radius: 6px;
+  background: #118DA8;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 0.75rem 1.25rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.btnBlue:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #0e505f;
+}
+
 .mainScreen {
   width: 100%;
 }
@@ -149,10 +166,21 @@ body {
           align-items: center;
 }
 
+.mainScreenImg {
+  position: relative;
+}
 .mainScreenImg img {
   border-radius: 0.75rem;
   width: 100%;
   height: 100%;
+  max-width: 45rem;
+}
+.mainScreenImg::before {
+  content: url("../img/triPalki.svg");
+  position: absolute;
+  left: -26px;
+  top: -26px;
+  z-index: 10;
 }
 
 .mainScreenContent {
@@ -206,4 +234,379 @@ body {
 }
 .mainScreenList ul li:last-child {
   margin-right: 0;
+}
+
+.latestEpisodes {
+  margin-top: 5.8rem;
+  margin-bottom: 10rem;
+}
+
+.latestEpisodesContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4.15rem;
+}
+
+.latestEpisodesTitle {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 79.2px;
+  letter-spacing: 2.88px;
+}
+
+.latestEpisodesCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 3.75rem;
+}
+
+.latestEpisodesCard {
+  border-radius: 2rem;
+  background: #000;
+  padding: 2.5rem;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 35rem;
+  grid-gap: 3.5rem;
+}
+
+.latestEpisodesCard_img {
+  width: 90%;
+  height: 90%;
+  margin-right: 3.5rem;
+}
+
+.latestEpisodesCardContent {
+  max-width: 48rem;
+}
+
+.latestEpisodesCard_filter {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  border-radius: 0.375rem;
+  background: #191919;
+  padding: 0 1rem;
+  text-align: center;
+  color: #FFF;
+}
+
+.latestEpisodesCard_episode {
+  color: #118DA8;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  margin-bottom: 1.12rem;
+  margin-top: 3rem;
+}
+
+.latestEpisodesCard_title {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  letter-spacing: 0.16rem;
+  margin-bottom: 1.75rem;
+}
+
+.latestEpisodesCard_decsription {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.0625rem;
+  margin-bottom: 3rem;
+}
+
+.jacobPaulaner {
+  padding: 6.25rem 0 0 0;
+}
+
+.jacobPaulanerContainer {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jacobPaulanerContent {
+  max-width: 37rem;
+  margin-right: 3.75rem;
+}
+
+.jacobPaulanerContent_btn {
+  border-radius: 25rem;
+  background: #118DA8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.jacobPaulanerContent_btn:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #0e505f;
+}
+.jacobPaulanerContent_btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.jacobPaulanerContent_secondTitle {
+  color: #118DA8;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  margin-top: 1.25rem;
+}
+
+.jacobPaulanerContent_title {
+  font-size: 4.0625rem;
+  font-weight: 400;
+  line-height: 4.95rem;
+  letter-spacing: 0.18rem;
+  margin-bottom: 1.75rem;
+}
+
+.jacobPaulanerContent_desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.0625rem;
+}
+.jacobPaulanerContent_desc p {
+  margin-bottom: 2.05rem;
+}
+.jacobPaulanerContent_desc p:last-child {
+  margin-bottom: 0;
+}
+
+.jacobPaulanerImg {
+  width: 100%;
+  height: 100%;
+}
+
+.subForUpdate {
+  margin-top: 12.5rem;
+}
+
+.subForUpdateContainer {
+  border-radius: 2rem;
+  background: #000;
+  padding: 3.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+.subForUpdateContainer::before {
+  content: url("../img/palkitri.svg");
+  position: absolute;
+  bottom: -1.62rem;
+  left: -2.38rem;
+}
+
+.subForUpdateContent_secondTitle {
+  color: #118DA8;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+
+.subForUpdateContent_title {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 4.95rem;
+  letter-spacing: 0.18rem;
+}
+
+.subForUpdateForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.subForUpdateForm_input {
+  border-radius: 0.375rem;
+  border: 1px solid #191919;
+  background: #191919;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  padding: 1.62rem;
+  margin-bottom: 1.25rem;
+}
+.subForUpdateForm_input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.subForUpdateForm_input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.subForUpdateForm_input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.subForUpdateForm_input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.subForUpdateForm_input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.subForUpdateForm_btn {
+  border-radius: 0.375rem;
+  background: #118DA8;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  padding: 1rem 1.6rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.subForUpdateForm_btn:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #0e505f;
+  color: #FFF;
+}
+
+.feedback {
+  margin-top: 12.5rem;
+}
+
+.feedbackContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.feedbackCard {
+  border-radius: 2rem;
+  background: #000;
+  padding: 3.2em;
+}
+
+.feedback_stars {
+  margin-bottom: 1.3rem;
+}
+
+.feedback_comment {
+  margin-bottom: 1.4rem;
+  color: #FFF;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+
+.feedback_name {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.footer {
+  margin-top: 6.25rem;
+}
+
+.footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 6.25rem 3.15rem;
+}
+
+.footerLogoAndContacts img {
+  margin-bottom: 1.44rem;
+}
+.footerLogoAndContacts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footerLogoAndContacts ul li {
+  margin-right: 0.62rem;
+}
+.footerLogoAndContacts ul li:last-child {
+  margin-right: 0;
+}
+
+.footerMenu li {
+  margin-bottom: 0.62rem;
+}
+.footerMenu li:last-child {
+  margin-bottom: 0;
+}
+.footerMenu li a {
+  color: #FFF;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footerMenu li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #118DA8;
+}
+
+.footerSecondMenu li {
+  margin-bottom: 0.62rem;
+}
+.footerSecondMenu li:last-child {
+  margin-bottom: 0;
+}
+.footerSecondMenu li a {
+  color: #FFF;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footerSecondMenu li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #118DA8;
 }
