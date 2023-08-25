@@ -96,7 +96,6 @@ a {
 }
 
 
-
 .main {
 	font-family: "Roboto";
 	.welcomeUjjo {
@@ -184,8 +183,127 @@ a {
 			}
 		}
 	}
+	.ujjoPacks {
+		.ujjoPacks-container {
+			padding: 20px 20px;
+			border: 1px solid #000;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.ujjoPacksGridContainer {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 22px;
+				.ujjoPack {
+					color: #000;
+					text-align: center;
+					font-family: 'Roboto';
+					padding: 76px 31px 30px 31px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					position: relative;
+					.ujjoPack__text {
+						h2 {
+							font-size: 18px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 28.08px;
+							letter-spacing: 0.5px;
+							text-transform: uppercase;
+							margin-bottom: 14px;
+							margin-top: 70px;
+						}
+						h1 {
+							font-size: 32px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 38.016px; /* 118.8% */
+							letter-spacing: 0.5px;
+							text-transform: uppercase;
+							margin-bottom: 13px;
+						}
+					}
+					.ujjoPack__imgContainer {
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+					&:nth-child(2) {
+						&::before {
+							content: url('../img/hotBig.png');
+							position: absolute;
+							top: 0;
+							left: -40px;
+						}
+						&::after {
+							content: url('../img/hotBig.png');
+							position: absolute;
+							top: 0;
+							right: -40px;
+						}
+					}
+					&:first-child {
+						&::before {
+							content: url('../img/hotSmall.png');
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
+					&:last-child {
+						&::after {
+							content: url('../img/hotSmall.png');
+							position: absolute;
+							top: 0;
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.ujjoRunStroke {
+		.ujjoRunStroke-container {
+			padding: 0;
+			.ujjoRunStroke__runContainer {
+				border: 1px solid #000;
+				padding: 26px 0;
+				marquee {
+					display: flex;
+					p {
+						color: #000;
+						text-align: center;
+						font-size: 17px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 25.92px;
+						letter-spacing: 0.5px;
+						text-transform: uppercase;
+						position: relative;
+						display: inline-flex;
+						align-items: center;
+						&::before {
+							content: url('../img/chilli.svg');
+							margin: 0 28px;
+						}
+					}
+				}
+			}
+			.ujjoRunStroke__imgContainer {
+				border: 1px solid #000;
+				padding: 22px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
 }
-
 
 
 .footer {
